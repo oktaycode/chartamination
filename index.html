@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Chart MVP</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Animation de graphique (MVP)</h1>
+    <canvas id="myChart" width="500" height="300"></canvas>
+    <div class="controls">
+      <label for="type">Type :</label>
+      <select id="type">
+        <option value="line">Ligne</option>
+        <option value="bar">Barres</option>
+      </select>
+      <label for="speed">Vitesse (ms/frame):</label>
+      <input type="number" id="speed" value="100" min="10" max="1000" step="10">
+      <button id="startBtn">Démarrer l'animation</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
